@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "activityId": 1,
+    "author": "Мартин Петров",
+    "role": "Участник",
+    "text": "Страхотна инициатива! Аз и трима приятели ще дойдем в събота.",
+    "createdAt": "2026-04-12T10:30:00",
+    "upvotes": 1
+  },
+  {
+    "id": 2,
+    "activityId": 1,
+    "author": "Организаторски Екип",
+    "role": "Организатор",
+    "text": "Очакваме ви в 10:00 ч. при главния вход на парка.",
+    "createdAt": "2026-04-12T11:00:00",
+    "upvotes": 0
+  },
+  {
+    "id": 3,
+    "activityId": 1,
+    "author": "Мартин Петров",
+    "text": "Чудесна инициатива!",
+    "role": "Гост",
+    "upvotes": 5,
+    "createdAt": "2026-04-19T20:40:15.068Z"
+  },
+  {
+    "id": 4,
+    "activityId": 2,
+    "author": "helloa",
+    "text": "asdasda",
+    "role": "Гост",
+    "upvotes": 3,
+    "createdAt": "2026-04-25T12:01:37.519Z"
+  },
+  {
+    "id": 5,
+    "activityId": 1,
+    "author": "dasd",
+    "text": "asdasda",
+    "role": "Гост",
+    "upvotes": 0,
+    "createdAt": "2026-04-25T12:10:22.052Z"
+  },
+  {
+    "id": 6,
+    "activityId": 1,
+    "author": "arads",
+    "text": "adasdasdas",
+    "role": "Гост",
+    "upvotes": 0,
+    "createdAt": "2026-04-25T12:32:21.886Z"
+  },
+  {
+    "id": 7,
+    "activityId": 1,
+    "author": "asdas",
+    "text": "assdasda",
+    "role": "Гост",
+    "upvotes": 1,
+    "createdAt": "2026-04-25T12:37:44.443Z"
+  },
+  {
+    "id": 8,
+    "activityId": 2,
+    "author": "gvhj",
+    "text": "gghgfh",
+    "role": "Гост",
+    "upvotes": 0,
+    "createdAt": "2026-04-25T12:51:59.106Z"
+  },
+  {
+    "id": 9,
+    "activityId": 2,
+    "author": "adsas",
+    "text": "asdas",
+    "role": "Гост",
+    "upvotes": 0,
+    "createdAt": "2026-04-25T13:04:32.258Z"
+  },
+  {
+    "id": 10,
+    "activityId": 1,
+    "author": "ARD",
+    "text": "SHHDHDHDS",
+    "role": "Гост",
+    "upvotes": 0,
+    "createdAt": "2026-04-25T15:00:13.007Z"
+  }
+]

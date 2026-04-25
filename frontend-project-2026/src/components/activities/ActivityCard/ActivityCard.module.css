@@ -1,0 +1,132 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: var(--shadow-card);
+    border-radius: var(--radius-card);
+}
+
+.top {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    padding: var(--space-6) var(--space-4) var(--space-4);
+    background-color: var(--color-surface-button-default);
+    border-radius: var(--radius-card) var(--radius-card) 0 0;
+}
+
+.cardFeatured .top {
+    background-color: var(--color-primary);
+}
+
+.tagRow {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-2) var(--space-4);
+    background-color: var(--color-surface-tag-soft);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-body);
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semibold);
+    line-height: var(--line-height-heading);
+    letter-spacing: var(--letter-spacing-loose);
+    white-space: nowrap;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    padding-inline: var(--space-2);
+}
+
+.title {
+    margin: 0;
+    color: var(--color-text-body);
+    font-size: var(--font-size-3xl);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-snug);
+    letter-spacing: var(--letter-spacing-tight);
+}
+
+.description {
+    margin: 0;
+    color: var(--color-text-body-faint);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-wide);
+}
+
+.imageWrap {
+    position: relative;
+    flex: 0 0 343px;
+    height: 343px;
+    background-color: var(--color-surface-button-default);
+    border-radius: 0 0 var(--radius-card) var(--radius-card);
+}
+
+.imageWrap picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cardFeatured .imageWrap {
+    background-color: var(--color-primary);
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-card);
+}
+
+.cta {
+    position: absolute;
+    right: var(--space-5);
+    bottom: var(--space-5);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4) var(--space-3) var(--space-5);
+    background-color: var(--color-white);
+    border-radius: var(--radius-2xl);
+    color: var(--color-text-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    line-height: var(--line-height-body);
+    transition: transform var(--transition-fast);
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+}
+
+.ctaLabel {
+    white-space: nowrap;
+}
+
+.ctaArrow {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2);
+    background-color: var(--color-primary);
+    border-radius: var(--radius-pill);
+}
+
+.ctaArrow img {
+    display: block;
+    width: 12px;
+    height: 12px;
+}

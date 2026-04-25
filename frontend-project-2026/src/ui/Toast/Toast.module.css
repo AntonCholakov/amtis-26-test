@@ -1,0 +1,131 @@
+.container {
+    position: fixed;
+    top: var(--space-6);
+    right: var(--space-6);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    pointer-events: none;
+}
+
+.container > * {
+    pointer-events: auto;
+}
+
+.toast {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    width: 100%;
+    min-width: 280px;
+    max-width: 380px;
+    padding: var(--space-4);
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-modal);
+    animation: slideInRight var(--transition-base) ease-out;
+}
+
+.iconBadge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-pill);
+    color: var(--color-white);
+}
+
+.iconBadge svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+.success .iconBadge {
+    background-color: var(--color-text-success);
+}
+
+.error .iconBadge {
+    background-color: var(--color-danger-strong);
+}
+
+.warning .iconBadge {
+    background-color: var(--color-accent);
+    color: var(--color-text-body);
+}
+
+.message {
+    flex: 1;
+    margin: 0;
+    color: var(--color-text-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-body);
+}
+
+.close {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    background: none;
+    border: none;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: color var(--transition-fast);
+}
+
+.close:hover {
+    color: var(--color-text-body);
+}
+
+.close svg {
+    width: 14px;
+    height: 14px;
+    display: block;
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(110%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInTop {
+    from {
+        transform: translateY(-110%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: var(--space-4);
+        right: var(--space-4);
+        left: var(--space-4);
+    }
+
+    .toast {
+        max-width: none;
+        animation: slideInTop var(--transition-base) ease-out;
+    }
+}

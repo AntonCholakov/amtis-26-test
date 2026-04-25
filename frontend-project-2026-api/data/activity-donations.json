@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "activityId": 1,
+    "amount": 10,
+    "createdAt": "2026-04-12T12:45:00"
+  },
+  {
+    "id": 2,
+    "activityId": 1,
+    "amount": 50,
+    "createdAt": "2026-04-12T13:20:00"
+  },
+  {
+    "id": 3,
+    "activityId": 1,
+    "amount": 50,
+    "createdAt": "2026-04-19T20:22:16.229Z"
+  },
+  {
+    "id": 4,
+    "activityId": 1,
+    "amount": 50,
+    "createdAt": "2026-04-25T12:44:41.245Z"
+  },
+  {
+    "id": 5,
+    "activityId": 1,
+    "amount": 10,
+    "createdAt": "2026-04-25T12:46:11.783Z"
+  },
+  {
+    "id": 6,
+    "activityId": 1,
+    "amount": 10,
+    "createdAt": "2026-04-25T12:46:19.393Z"
+  },
+  {
+    "id": 7,
+    "activityId": 3,
+    "amount": 10,
+    "createdAt": "2026-04-25T12:47:25.507Z"
+  },
+  {
+    "id": 8,
+    "activityId": 2,
+    "amount": 10,
+    "createdAt": "2026-04-25T12:51:43.736Z"
+  },
+  {
+    "id": 9,
+    "activityId": 1,
+    "amount": 5,
+    "createdAt": "2026-04-25T13:00:49.773Z"
+  },
+  {
+    "id": 10,
+    "activityId": 2,
+    "amount": 20,
+    "createdAt": "2026-04-25T13:04:40.022Z"
+  },
+  {
+    "id": 11,
+    "activityId": 1,
+    "amount": 200,
+    "createdAt": "2026-04-25T15:01:17.077Z"
+  }
+]

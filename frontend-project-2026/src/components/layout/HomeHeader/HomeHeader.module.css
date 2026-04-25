@@ -1,0 +1,231 @@
+.header {
+    padding: 34px 0 37px;
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.hamburger {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: var(--color-surface-soft);
+    border: none;
+    border-radius: var(--radius-pill);
+    cursor: pointer;
+    transition: background-color var(--transition-base);
+}
+
+.hamburger:hover {
+    background-color: var(--color-surface-hover);
+}
+
+.hamburgerIcon {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSection {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    text-decoration: none;
+}
+
+.logoBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px var(--space-2);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: var(--color-text-body);
+    font-size: 17px;
+    font-weight: var(--font-weight-extrabold);
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.logoText {
+    color: var(--color-text-body);
+    font-size: 17px;
+    font-weight: var(--font-weight-extrabold);
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    align-items: center;
+    gap: var(--space-3);
+    padding: var(--space-4) var(--space-5);
+    background-color: var(--color-surface-soft);
+    border-radius: var(--radius-pill);
+    list-style: none;
+    margin: 0;
+}
+
+.navLink {
+    color: var(--color-text-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-relaxed);
+    text-decoration: none;
+    transition: color var(--transition-base), opacity var(--transition-base);
+}
+
+.navLink:hover {
+    opacity: 0.6;
+}
+
+.navLinkActive {
+    color: var(--color-primary-strong);
+    font-weight: var(--font-weight-bold);
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.profileButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+    background-color: var(--color-surface-soft);
+    border-radius: var(--radius-pill);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--transition-base);
+}
+
+.profileButton:hover {
+    background-color: var(--color-surface-hover);
+}
+
+.profileIcon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    object-fit: contain;
+}
+
+.ctaButton {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    padding: var(--space-3) var(--space-4) var(--space-3) var(--space-5);
+    background-color: var(--color-surface-soft);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-body);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    line-height: 20px;
+    text-decoration: none;
+    transition: background-color var(--transition-base);
+}
+
+.ctaButton:hover {
+    background-color: var(--color-surface-hover);
+}
+
+.ctaIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-2);
+    background-color: var(--color-primary);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-body);
+}
+
+.ctaIcon img {
+    width: 12px;
+    height: 12px;
+    display: block;
+    object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding: var(--space-5) 0;
+    }
+
+    .leftSection {
+        gap: var(--space-2);
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navOpen {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: var(--space-4);
+        right: var(--space-4);
+        margin-block-start: var(--space-2);
+        padding: var(--space-4);
+        background-color: var(--color-white);
+        border: 1px solid var(--color-border-subtle);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-md);
+        z-index: 20;
+    }
+
+    .navOpen .navList {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--space-2);
+        padding: 0;
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .navOpen .navLink {
+        display: block;
+        padding: var(--space-3) var(--space-4);
+        border-radius: var(--radius-md);
+    }
+
+    .navOpen .navLink:hover {
+        background-color: var(--color-surface-soft);
+        opacity: 1;
+    }
+
+    .profileButton {
+        display: none;
+    }
+
+    .ctaIcon {
+        display: none;
+    }
+
+    .hamburger {
+        display: inline-flex;
+    }
+}

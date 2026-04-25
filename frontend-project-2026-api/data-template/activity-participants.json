@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "activityId": 1,
+    "fullName": "Иван Иванов",
+    "email": "ivan.ivanov@email.com",
+    "phone": "0888 123 456",
+    "createdAt": "2026-04-12T12:30:00"
+  },
+  {
+    "id": 2,
+    "activityId": 1,
+    "fullName": "Мария Георгиева",
+    "email": "maria.georgieva@email.com",
+    "phone": "0899 654 321",
+    "createdAt": "2026-04-12T13:10:00"
+  }
+]

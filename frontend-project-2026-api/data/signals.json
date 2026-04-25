@@ -1,0 +1,78 @@
+[
+  {
+    "id": 1,
+    "title": "Дупка на ул. „Васил Левски“ — опасност за пешеходци",
+    "description": "Голяма дупка в настилката до кръстовището с ул. „Раковски“ — вече предизвика падане на велосипедист. Необходима е спешна намеса от общината.",
+    "categoryId": 1,
+    "status": "Отворен",
+    "location": "София, Лозенец",
+    "createdAt": "2026-04-12T10:00:00",
+    "reporterName": "Иван Иванов",
+    "reporterEmail": "ivan.ivanov@email.com"
+  },
+  {
+    "id": 2,
+    "title": "Нерегламентирано изхвърляне на отпадъци в парка",
+    "description": "В югозападния ъгъл на парк „Лаута“ редовно се изхвърлят строителни отпадъци и стари мебели. Проблемът се повтаря от месеци без реакция.",
+    "categoryId": 2,
+    "status": "Отворен",
+    "location": "Пловдив, Тракия",
+    "createdAt": "2026-04-12T10:00:00",
+    "reporterName": "Мария Петрова",
+    "reporterEmail": "maria.petrova@email.com"
+  },
+  {
+    "id": 3,
+    "title": "Липса на учебници за 8. клас в ОУ „Паисий Хилендарски“",
+    "description": "Учениците от три паралелки започнаха учебната година без учебници по математика и биология. След сигнал, училището получи необходимите материали за 5 дни.",
+    "categoryId": 3,
+    "status": "Решен",
+    "location": "София, Лозенец",
+    "createdAt": "2026-04-12T10:00:00",
+    "reporterName": "Николай Георгиев",
+    "reporterEmail": "nikolay.georgiev@email.com"
+  },
+  {
+    "id": 4,
+    "status": "Отворен",
+    "createdAt": "2026-04-25T08:16:29.926Z",
+    "title": "Счупена лампа на улицата",
+    "categoryId": 5,
+    "location": "София, Младост",
+    "description": "Уличната лампа не работи от няколко дни.",
+    "reporterName": "Иван Иванов",
+    "reporterEmail": "ivan@email.com"
+  },
+  {
+    "id": 5,
+    "createdAt": "2026-04-25T10:15:25.118Z",
+    "title": "Пробаii",
+    "categoryId": 1,
+    "location": "Девин",
+    "description": "адхахуфиоафаиоиоасд",
+    "reporterName": "Арда",
+    "reporterEmail": "ardahalibrqqm@gmail.com"
+  },
+  {
+    "id": 7,
+    "status": "Отворен",
+    "createdAt": "2026-04-25T10:20:50.045Z",
+    "title": "xsadas",
+    "categoryId": 1,
+    "location": "asdasd",
+    "description": "asdasd",
+    "reporterName": "asdas",
+    "reporterEmail": "ardahalibrqqm@gmail.com"
+  },
+  {
+    "id": 8,
+    "status": "Отворен",
+    "createdAt": "2026-04-25T13:03:46.784Z",
+    "title": "adasdas",
+    "categoryId": 1,
+    "location": "dasdasd",
+    "description": "dqwwed",
+    "reporterName": "qwdqwdqw",
+    "reporterEmail": "ardahalibrqqm@gmail.com"
+  }
+]

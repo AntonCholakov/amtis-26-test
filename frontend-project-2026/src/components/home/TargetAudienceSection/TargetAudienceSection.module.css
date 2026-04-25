@@ -1,0 +1,131 @@
+.section {
+    background-color: var(--color-surface-inverse);
+    padding-block: var(--section-padding-y, 5rem);
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header .taglineColor {
+    color: rgba(255, 255, 255, 0.32);
+    padding-top: 30px;
+}
+
+.header .titleColor {
+    color: var(--color-white);
+}
+
+.cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.cardRow {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.card {
+    border-radius: 20px;
+    padding: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.cardPrimary {
+    background-color: var(--color-primary, #c4ff3e);
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.cardSecondary {
+    background-color: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.iconWrapperDark {
+    background-color: var(--color-neutral-800);
+    border-radius: 50%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    box-sizing: border-box;
+}
+
+.iconWrapperPrimary {
+    background-color: var(--color-primary, #c4ff3e);
+    border-radius: 50%;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    box-sizing: border-box;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    display: block;
+    pointer-events: none;
+}
+
+.cardTitleDark {
+    color: var(--color-text-body);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+.cardTitleLight {
+    color: var(--color-white, #ffffff);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.35;
+    letter-spacing: -0.3px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+    .section {
+        padding-block: var(--space-12);
+    }
+
+    .header .taglineColor {
+        padding-top: 0;
+    }
+
+    .cardRow {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .card {
+        padding: var(--space-6);
+        gap: 16px;
+    }
+
+    .cardTitleDark,
+    .cardTitleLight {
+        font-size: 24px;
+    }
+}

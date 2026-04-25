@@ -1,0 +1,128 @@
+:root {
+    --color-white: #ffffff;
+    --color-black: #000000;
+    --color-grey-500: #999999;
+    --color-grey-600: #777777;
+    --color-surface-soft: #f2f2e8;
+    --color-surface-hover: #E6E5DF;
+
+    --color-bg-body: #fffbff;
+    --color-text-body: #010101;
+    --color-text-inverse: var(--color-white);
+    --color-primary: #C4FF3E;
+    --color-primary-hover: #68b536;
+    --color-primary-strong: #4d8f23;
+    --color-primary-soft: rgba(196, 255, 62, 0.2);
+    --color-secondary: #173f2a;
+    --color-secondary-soft: #244f39;
+    --color-border: #dbe5d3;
+    --color-accent: #ffcf5a;
+    --color-danger: #d64545;
+    --color-danger-destructive: #be3f3d;
+    --color-text-state-error: #8f2928;
+    --color-surface-state-error: #faf3f3;
+    --color-shadow: 23 32 20;
+
+    --color-surface-inverse: #010101;
+    --color-surface-inverse-card: rgba(255, 255, 255, 0.04);
+    --color-surface-newsletter: #f1f39f;
+    --color-surface-tag-neutral: #f2f2ec;
+    --color-surface-bullet: #eeeee8;
+    --color-surface-action-dark: #1e1918;
+    --color-surface-button-default: #f6f5f5;
+    --color-surface-tag-soft: rgba(1, 1, 1, 0.08);
+    --color-text-newsletter-dark: #393a08;
+    --color-text-muted: #7c6e6b;
+    --color-text-placeholder: #a7a4a3;
+    --color-text-body-soft: rgba(1, 1, 1, 0.6);
+    --color-text-body-medium: rgba(1, 1, 1, 0.8);
+    --color-text-body-faint: rgba(1, 1, 1, 0.55);
+    --color-text-body-half: rgba(1, 1, 1, 0.5);
+    --color-text-success: #00671e;
+    --color-text-strikethrough-inverse: rgba(255, 255, 255, 0.57);
+    --color-text-inverse-tagline: rgba(255, 255, 255, 0.35);
+    --color-text-inverse-muted: rgba(255, 255, 255, 0.42);
+    --color-border-muted: #d6d3d3;
+    --color-border-inverse: rgba(255, 255, 255, 0.08);
+    --color-border-subtle: rgba(1, 1, 1, 0.1);
+    --color-danger-strong: #de2b00;
+    --color-neutral-800: #0b0b0b;
+
+    /* Typography */
+    --font-family-base: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --font-family-heading: "Manrope", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --font-size-2xs: 0.625rem; /* 10px */
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 3.75rem; /* 60px */
+    --font-size-5xl: 4.5rem; /* 72px */
+    --font-size-display: 5rem; /* 80px — large display numerals */
+
+    --line-height-tight: 1.1;
+    --line-height-heading: 1.2;
+    --line-height-snug: 1.35;
+    --line-height-body: 1.5;
+    --line-height-relaxed: 1.65;
+
+    --letter-spacing-tightest: -3.2px;
+    --letter-spacing-tighter: -1.45px;
+    --letter-spacing-tight: -0.3px;
+    --letter-spacing-wide: 0.15px;
+    --letter-spacing-relaxed: 0.25px;
+    --letter-spacing-loose: 0.5px;
+    --letter-spacing-widest: 2.5px;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+
+    /* Spacing */
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 0.75rem;
+    --space-4: 1rem;
+    --space-5: 1.25rem;
+    --space-6: 1.5rem;
+    --space-7: 1.75rem; /* 28px */
+    --space-8: 2rem;
+    --space-10: 2.5rem;
+    --space-12: 3rem;
+    --space-16: 4rem;
+    --space-20: 5rem;
+    --space-24: 6rem;
+    --space-32: 8rem;
+
+    /* Radius */
+    --radius-sm: 0.5rem;
+    --radius-md: 0.875rem;
+    --radius-lg: 1.25rem;
+    --radius-card: 1.5rem; /* 24px — activity cards, image rounding */
+    --radius-xl: 1.75rem;
+    --radius-2xl: 2rem; /* 32px — large surface panels */
+    --radius-pill: 999px;
+
+    /* Shadows */
+    --shadow-sm: 0 4px 12px rgba(var(--color-shadow), 0.06);
+    --shadow-md: 0 10px 30px rgba(var(--color-shadow), 0.1);
+    --shadow-lg: 0 18px 50px rgba(var(--color-shadow), 0.14);
+    --shadow-card: 0 1px 3px 0 rgba(30, 25, 24, 0.08);
+    --shadow-modal: 0 8px 24px 0 rgba(30, 25, 24, 0.16);
+
+    /* Layout */
+    --container-max-width: 1440px;
+    --container-padding: 48px;
+    --section-padding-y: 5rem;
+    --header-height: 88px;
+
+    /* Motion */
+    --transition-fast: 160ms ease;
+    --transition-base: 220ms ease;
+}

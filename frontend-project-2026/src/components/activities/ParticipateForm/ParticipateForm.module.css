@@ -1,0 +1,200 @@
+.formContainer {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border-subtle);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-10); /* Reduced from 16 to 10 for "small" feel */
+    gap: var(--space-8);
+    position: relative;
+    box-shadow: var(--shadow-modal);
+    align-items: stretch;
+    margin: auto;
+}
+
+.leftColumn {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+    width: 350px; /* Reduced from 478 to fit 900px width */
+    flex-shrink: 0;
+}
+
+.imageWrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: var(--radius-card);
+    overflow: hidden;
+}
+
+.imageWrapper picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.panelImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.leftTextContent {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+}
+
+.leftTitle {
+    font-family: var(--font-family-heading);
+    font-size: var(--font-size-2xl); /* Reduced from 3xl */
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-newsletter-dark);
+    line-height: var(--line-height-snug);
+    letter-spacing: var(--letter-spacing-tight);
+    margin: 0;
+}
+
+.leftDescription {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-text-body-soft);
+    line-height: var(--line-height-body);
+    letter-spacing: var(--letter-spacing-wide);
+    margin: 0;
+}
+
+.rightColumn {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-6);
+}
+
+.inputGroupsContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    width: 100%;
+}
+
+.labelWrapper {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+}
+
+.label {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-text-muted);
+    line-height: var(--line-height-tight);
+}
+
+.requiredStar {
+    color: var(--color-danger-strong);
+}
+
+.inputField {
+    width: 100%;
+    height: 48px; /* Reduced slightly from 52px */
+    background-color: var(--color-surface-newsletter);
+    border: 1px solid var(--color-border-muted);
+    border-radius: var(--radius-2xl);
+    padding: 0 var(--space-5);
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-md);
+    color: var(--color-text-body);
+}
+
+.inputField:focus {
+    outline: none;
+    border-color: var(--color-primary-strong);
+}
+
+.inputField::placeholder {
+    color: var(--color-text-placeholder);
+}
+
+.inputError {
+    border-color: var(--color-danger);
+    background-color: var(--color-surface-state-error);
+}
+
+.errorText {
+    color: var(--color-text-state-error);
+    font-size: var(--font-size-sm);
+    margin-top: 4px;
+}
+
+.btnSubmit {
+    width: 100%;
+    height: 48px;
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: var(--radius-2xl);
+    padding: 0 var(--space-4) 0 var(--space-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-2);
+    cursor: pointer;
+}
+
+.btnText {
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-bold);
+    color: var(--color-text-body);
+}
+
+.arrowCircle {
+    background-color: var(--color-white);
+    width: 24px;
+    height: 24px;
+    border-radius: var(--radius-pill);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrowIcon {
+    width: 10px;
+    height: 10px;
+}
+
+.btnClose {
+    background: none;
+    border: none;
+    font-family: var(--font-family-base);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-text-muted);
+    cursor: pointer;
+    text-transform: lowercase;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .formContainer {
+        flex-direction: column;
+        width: 100%;
+        padding: var(--space-6);
+    }
+    .leftColumn {
+        width: 100%;
+    }
+}

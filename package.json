@@ -1,0 +1,15 @@
+{
+  "name": "frontend-task-2026-root",
+  "private": true,
+  "workspaces": [
+    "frontend-project-2026",
+    "frontend-project-2026-api"
+  ],
+  "scripts": {
+    "dev:all": "concurrently \"npm run dev -w frontend-project-2026\" \"npm run start:dev -w frontend-project-2026-api\"",
+    "start": "npm run dev:all"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

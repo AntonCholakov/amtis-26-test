@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-1);
+    text-decoration: none;
+}
+
+.logoBadge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3px var(--space-2);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-primary);
+    color: var(--color-text-body);
+    font-size: 17px;
+    font-weight: var(--font-weight-extrabold);
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+
+.logoText {
+    color: var(--color-text-body);
+    font-size: 17px;
+    font-weight: var(--font-weight-extrabold);
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
